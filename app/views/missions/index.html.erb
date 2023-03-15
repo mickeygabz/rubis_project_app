@@ -1,0 +1,32 @@
+<p style="color: green"><%= notice %></p>
+<div class="mx-3">
+  <div class="d-flex align-items-center justify-content-between">
+    <h1>Missions</h1>
+    <%= link_to "Add mission", new_mission_path, class:"btn btn-success" %>
+  </div>
+
+  <div id="missions">
+    <table class="table table-hover table-bordered">
+      <thead style="position: sticky;top: 0" class="thead-dark ">
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Manufacturer</th>
+          <th>Website</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @missions.each do |mission| %>
+          <tr>
+              <td class="font-weight-bold"><%= mission.title %></td>
+              <td><%= mission.description %></td>
+              <td><%= mission.manufacturer %></td>
+              <td><a href="<%= mission.website %>" target=”_blank”><%= mission.website %></a> </td>
+          </tr>
+        <%end%>
+      </tbody>
+
+    </table>
+  </div>
+</div>
