@@ -30,7 +30,7 @@
 
 # 📖 rubis_project_app <a name="about-project"></a>
 
-**rubis_project_app** is an application that obtains missions data from the spaceX data API and displays on the UI. It also allows a user to add mission data. It is built with Ruby on Rails.
+*rubis_project_app* is an application that obtains missions data from the spaceX data API and displays on the UI. It also allows a user to add mission data. It is built with Ruby on Rails.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,6 +41,7 @@
   <ul>
     <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
     <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://www.docker.com/">Docker</a></li>
   </ul>
 </details>
 
@@ -55,15 +56,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Create Missions**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- *Create Missions*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,19 +70,19 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-```sh
- gem install rails 7.0.4.2
-```
+sh
+ install docker
 
 
-```sh
- Install PostgreSQL
-```
+
+sh
+ Install docker-compose
 
 
-```sh
+
+sh
  Install code editor e.g VSCode
-```
+
 
 
 ### Setup
@@ -97,61 +90,42 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 
-```sh
+sh
   cd rubis_project_app
   git clone https://github.com/mickeygabz/rubis_project_app.git
-```
+
 -
 
 ### Install
 
 Install this project with:
 
-```sh
+sh
   cd rubis_project_app
   bundle install
-```
+
 -
 
 ### Usage
 
 To run the project, execute the following command:
 
+sh
+  docker-compose up --build
 
-```sh
-  rails db:create
-```
 
-```sh
-  rails db:migrate
-```
+sh
+  docker-compose run rails db:migrate db:seed
 
-```sh
-  rails db:seed
-```
-
-```sh
-  rails server
-```
--
-
-### Run tests
-
-To run tests, run the following command:
-
-```sh
-  rspec spec
-```
--
 
 ### Run on server
 
 You can run this project on live server on your local machine using:
 
 
-```sh
-  http://127.0.0.1:3000/missions
-```
+sh
+  http://localhost:3000/
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -162,10 +136,9 @@ You can run this project on live server on your local machine using:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 *Author1*
 
-- GitHub: [@mickeygabz ](https://github.com/mickeygabz)
-
+- GitHub: [@mikeygabz ](https://github.com/mickeygabz)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -176,8 +149,8 @@ You can run this project on live server on your local machine using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **Login page**
-- [ ] **New user registration page**
+- [ ] *Login page*
+- [ ] *New user registration page*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,6 +178,6 @@ If you like this project, please give it a star on Github.
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
